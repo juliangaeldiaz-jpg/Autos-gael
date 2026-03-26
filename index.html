@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Autos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+<h1>🚗 App Autos</h1>
+<p>Alumno: Julian Gael Díaz Jacinto</p>
+</header>
+
+<nav>
+<button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
+<button onclick="mostrarSeccion('autos')">🚗 Autos</button>
+<button onclick="mostrarSeccion('info')">ℹ️ Info</button>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio" class="seccion">
+<h2>Bienvenido</h2>
+<p>Explora diferentes autos y conoce sus precios.</p>
+<img src="img/autos.png">
+</section>
+
+<!-- AUTOS -->
+<section id="autos" class="seccion">
+<h2>Autos</h2>
+
+<div class="card">
+<img src="img/deportivo.png">
+<h3>🏎️ Deportivo</h3>
+<p>$500,000</p>
+<button onclick="comprar('Deportivo',500000)">Comprar</button>
+</div>
+
+<div class="card">
+<img src="img/suv.png">
+<h3>🚙 SUV</h3>
+<p>$350,000</p>
+<button onclick="comprar('SUV',350000)">Comprar</button>
+</div>
+
+<div class="card">
+<img src="img/clasico.png">
+<h3>🚘 Clásico</h3>
+<p>$200,000</p>
+<button onclick="comprar('Clásico',200000)">Comprar</button>
+</div>
+
+</section>
+
+<!-- INFO -->
+<section id="info" class="seccion">
+<h2>Información</h2>
+<p>Sitio web de autos con diseño tipo app.</p>
+<p>Proyecto escolar de desarrollo web.</p>
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
